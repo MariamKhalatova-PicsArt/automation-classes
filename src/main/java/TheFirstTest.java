@@ -33,10 +33,12 @@ public class TheFirstTest {
         signInButton.click();
         Thread.sleep(5000);
         String expectedUrl = "https://picsartstage2.com/create";
+        System.out.println(expectedUrl);
         String a = driver.getCurrentUrl();
         System.out.println(a);
-        if (a == expectedUrl){
+        if (a.equals(expectedUrl)){
          System.out.println("Navigated to correct webpage");
         } else {System.out.println("wrong");
         //        driver.quit();
-    }}}
+    }
+    }}
